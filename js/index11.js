@@ -22,15 +22,6 @@ $(function(){
 							left:"15%"
 								},1200,"easeOutQuint");	
 
-			$("#section_p3").hover(function(){
-				$("#section1_box").show(400);
-					},function(){
-						$("#section1_box").hide(200);	
-			})
-			
-			$("#section1_box").hover(function(){
-				$("#section_box1").show();
-			})
 		//section2选项卡
 			 var $div_li = $("div.tab_menu ul li");
 				$div_li.click(function(){
