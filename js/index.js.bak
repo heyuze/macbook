@@ -1,0 +1,42 @@
+$(function(){
+	var oinner6 = document.getElementById("section3_img6");
+	var test = document.getElementById("test");
+	var transZRegex = /\.*translate3d\((.*,.*,.*)px\)/i;
+    test.onmousewheel = function(event) {
+    			event = event || window.event;
+				if(event.wheelDelta>0){
+					console.dir(transZRegex.exec(oinner6.style.transform));
+					var scrollY = parseInt(transZRegex.exec(oinner6.style.transform)[1].split(",")[1])-11.6155;
+					if(scrollY<-100) return;
+				oinner6.style.transitionDelay="0s";
+				oinner6.style.transitionDuration="0.9s";
+				oinner6.style.transform="translate3d(0,"+scrollY+"px,0)";   
+				oinner6.style.msTransform="translate3d(0,"+scrollY+"px,0)";   
+				oinner6.style.webkitTransform="translate3d(0,"+scrollY+"px,0)";   
+				oinner6.style.MozTransform="translate3d(0,"+scrollY+"px,0)";   
+				oinner6.style.OTransform="translate3d(0,"+scrollY+"px,0)";
+				/*oinner6.style.transform="rotate(7deg)";
+				oinner6.style.msTransform="rotate(7deg)"; 	
+				oinner6.style.mozTransform="rotate(7deg)"; 	
+				oinner6.style.webkitTransform="rotate(7deg)"; 
+				oinner6.style.oTransform="rotate(7deg)";*/
+				}else{
+				var scrollY = parseInt(transZRegex.exec(oinner6.style.transform)[1].split(",")[1])+11.4654;
+				if(scrollY>100) return;
+				oinner6.style.transitionDelay="0s";
+				oinner6.style.transitionDuration="0.9s";
+				oinner6.style.transform="translate3d(0,"+scrollY+"px,0)";   
+				oinner6.style.msTransform="translate3d(0,"+scrollY+"px,0)";   
+				oinner6.style.webkitTransform="translate3d(0,"+scrollY+"px,0)";   
+				oinner6.style.MozTransform="translate3d(0,"+scrollY+"px,0)";   
+				oinner6.style.OTransform="translate3d(0,"+scrollY+"px,0)";
+				oinner6.style.OTransform="translate3d(0,"+scrollY+"px,0)";
+				/*oinner6.style.transform="rotate(7deg)";
+				oinner6.style.msTransform="rotate(7deg)"; 	
+				oinner6.style.mozTransform="rotate(7deg)"; 	
+				oinner6.style.webkitTransform="rotate(7deg)"; 
+				oinner6.style.oTransform="rotate(7deg)";*/
+				}				
+			};
+	
+})

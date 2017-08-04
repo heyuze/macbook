@@ -1,0 +1,28 @@
+@charset "utf-8"
+body{
+
+}
+#test{
+height:2000px;
+background:#fff;
+}
+.scroll{
+top: 30%;
+position: absolute;
+left: 70%;
+width: 1160px;
+margin-left: -580px;
+}
+.scroll2{
+top: 30%;
+position: absolute;
+left: 30%;
+width: 1160px;
+margin-left: -580px;
+}
+#section3_img6 img{
+width:30%;
+}
+#section3_img7 img{
+width:30%;
+}
